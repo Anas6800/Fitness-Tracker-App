@@ -1,150 +1,145 @@
-Here’s a **clean, simple GitHub README** for your project (easy to understand, not too long):
+Here’s an **updated GitHub README** that **matches your actual folder structure & components** and stays **simple and clean** 👍
 
 ---
 
-# 🏋️ Fitness Challenge Tracker
+# 🏋️ Fitness Tracker Website
 
-A web application that helps users create fitness challenges, track daily progress, and compete on a global leaderboard.
+A fitness challenge tracking web app where users can create challenges, log daily progress, view stats, and compete on a global leaderboard.
 
-Built with **React** and **Firebase**.
+Built using **React + TypeScript + Firebase**.
 
 ---
 
 ## 🚀 Features
 
-* 🔐 User Authentication (Email & Password)
-* 🏁 Create, Edit & Delete Fitness Challenges
-* 📅 Daily Progress Tracking
-* 📊 Completion Percentage Calculation
+* 🔐 Email/Password Authentication
+* 🏁 Create & Manage Fitness Challenges
+* 📅 Daily Progress Logging
+* 📊 Progress Charts (Chart.js)
 * 🏆 Global Leaderboard
-* 📈 Weekly Progress Charts (Chart.js)
-* 📱 Fully Responsive Design
-* ☁️ Deployed on Firebase Hosting
+* 📱 Responsive UI
+* 🔒 Protected Routes
+* ☁️ Firebase Hosting
 
 ---
 
 ## 🛠 Tech Stack
 
-* **Frontend:** React
+* **Frontend:** React + TypeScript
 * **Backend:** Firebase
 
   * Authentication
-  * Firestore Database
+  * Firestore
   * Hosting
 * **Charts:** Chart.js
+* **Styling:** CSS
 
 ---
 
 ## 📂 Project Structure
 
 ```
-src/
-├── components/
-│   ├── Auth/
-│   ├── Dashboard/
-│   ├── Challenges/
-│   ├── Leaderboard/
-│   └── Charts/
-├── firebase.js
-├── routes/
-├── App.js
-└── index.js
+fitness-tracker/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── ChallengeItem.tsx
+│   │   ├── ConfirmDialog.tsx
+│   │   ├── CreateChallenge.tsx
+│   │   ├── Dashboard.tsx
+│   │   ├── ExploreChallenges.tsx
+│   │   ├── GlobalLeaderboard.tsx
+│   │   ├── Layout.tsx
+│   │   ├── Leaderboard.tsx
+│   │   ├── Login.tsx
+│   │   ├── LogProgress.tsx
+│   │   ├── ProgressChart.tsx
+│   │   ├── ProtectedRoute.tsx
+│   │   ├── Signup.tsx
+│   │   └── StatsCard.tsx
+│   ├── context/
+│   ├── firebase.ts
+│   ├── App.tsx
+│   ├── main.tsx
+│   ├── index.css
+│   ├── style.css
+│   └── types.ts
+├── .firebase/
+├── dist/
+└── firebase.js
 ```
 
 ---
 
 ## 🔑 Authentication
 
-* Email & Password Signup
-* Secure Login / Logout
-* Protected Dashboard Routes
+* Signup & Login using Email/Password
+* Logout functionality
+* Protected routes using `ProtectedRoute.tsx`
 
 ---
 
 ## 🏁 Challenge Management
 
-* Create fitness challenges (Title, Goal, Duration)
-* View all challenges in dashboard
-* Update or delete challenges
-* Real-time data stored in Firestore
+* Create fitness challenges (title, goal, duration)
+* View challenges in dashboard
+* Edit or delete challenges
+* Data stored in Firestore
 
 ---
 
 ## 📅 Progress Tracking
 
-* Log daily progress for each challenge
-* Automatic completion percentage calculation
-* Weekly progress visualization using charts
+* Log daily progress per challenge
+* Auto progress calculation
+* Visual charts for weekly progress
 
 ---
 
 ## 🏆 Leaderboard
 
 * Global leaderboard
-* Sorted by highest completion percentage
+* Sorted by completion percentage
 * Real-time updates from Firestore
-
----
-
-## 📊 Stats & Visualization
-
-* Active vs Completed Challenges
-* Weekly progress charts
-* Responsive grid layout for cards and charts
 
 ---
 
 ## ⚙️ Installation & Setup
 
-### 1️⃣ Clone the repository
+### 1️⃣ Clone Repo
 
 ```bash
-git clone https://github.com/your-username/fitness-challenge-tracker.git
-cd fitness-challenge-tracker
+git clone https://github.com/your-username/fitness-tracker.git
+cd fitness-tracker
 ```
 
-### 2️⃣ Install dependencies
+### 2️⃣ Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 3️⃣ Firebase Configuration
+### 3️⃣ Firebase Setup
 
-Create a Firebase project and enable:
+Enable in Firebase:
 
 * Authentication (Email/Password)
-* Firestore Database
+* Firestore
 * Hosting
 
-Create `firebase.js`:
-
-```js
-import { initializeApp } from "firebase/app";
-
-const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID",
-};
-
-export const app = initializeApp(firebaseConfig);
-```
+Update `firebase.ts` with your config.
 
 ---
 
-## ▶️ Run the App
+## ▶️ Run Locally
 
 ```bash
-npm start
+npm run dev
 ```
 
 ---
 
-## 🚀 Deployment
+## 🚀 Deploy
 
 ```bash
 npm run build
@@ -153,27 +148,27 @@ firebase deploy
 
 ---
 
-## 🧪 Testing
+## 🧪 Testing Flow
 
-* Register a new user
-* Create a challenge
-* Log daily progress
-* Check leaderboard updates
-* Verify responsive UI
+1. Signup / Login
+2. Create Challenge
+3. Log Daily Progress
+4. View Stats & Charts
+5. Check Leaderboard
 
 ---
 
-## 📌 Future Improvements
+## 📌 Future Enhancements
 
-* Push notifications
-* Social sharing
-* Challenge templates
 * Dark mode
+* Social challenges
+* Notifications
+* Mobile app version
 
 ---
 
 ## 📄 License
 
-This project is open-source and available under the **MIT License**.
+MIT License – free to use and modify.
 
 ---
