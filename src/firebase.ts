@@ -6,7 +6,7 @@ import { enableIndexedDbPersistence, getFirestore } from 'firebase/firestore';
 // Note: These values are not "secret" by themselves, but hardcoding can make it easy
 // to accidentally commit project config to a public repo.
 const firebaseConfig = {
-  apiKey: "AIzaSyDKPtQTysp73w4b-GcK-zhntWEwLRjqzzE",
+  apiKey: 
   authDomain: "fitness-challenge-tracke-9bafa.firebaseapp.com",
   projectId: "fitness-challenge-tracke-9bafa",
   storageBucket: "fitness-challenge-tracke-9bafa.firebasestorage.app",
